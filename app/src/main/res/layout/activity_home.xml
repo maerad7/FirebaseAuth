@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    tools:layout_editor_absoluteY="73dp">
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        app:layout_constraintBottom_toTopOf="@+id/button_change_password"
+        app:layout_constraintEnd_toEndOf="@+id/button_change_password"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button_change_password"
+        app:layout_constraintTop_toBottomOf="@+id/button_check_email" />
+
+    <Button
+        android:id="@+id/button_change_password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 변경"
+        app:layout_constraintBottom_toTopOf="@+id/button_storage"
+        app:layout_constraintEnd_toEndOf="@+id/button_storage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button_storage"
+        app:layout_constraintTop_toBottomOf="@+id/button_logout" />
+
+    <Button
+        android:id="@+id/button_check_email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="이메일주소 확인"
+        app:layout_constraintBottom_toTopOf="@+id/button_logout"
+        app:layout_constraintEnd_toEndOf="@+id/button_logout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button_logout"
+        app:layout_constraintTop_toBottomOf="@+id/button_change_email" />
+
+    <Button
+        android:id="@+id/button_change_email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="아이디변경"
+        app:layout_constraintBottom_toTopOf="@+id/button_check_email"
+        app:layout_constraintEnd_toEndOf="@+id/button_check_email"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button_check_email"
+        app:layout_constraintTop_toBottomOf="@+id/button_database" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="탈퇴하기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_storage" />
+
+    <Button
+        android:id="@+id/button_database"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="데이터베이스"
+        app:layout_constraintBottom_toTopOf="@+id/button_change_email"
+        app:layout_constraintEnd_toEndOf="@+id/button_change_email"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button_change_email"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_storage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Storage"
+        app:layout_constraintBottom_toTopOf="@+id/button_delete"
+        app:layout_constraintEnd_toEndOf="@+id/button_delete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button_delete"
+        app:layout_constraintTop_toBottomOf="@+id/button_change_password"
+        tools:text="Storage" />
+</android.support.constraint.ConstraintLayout>
